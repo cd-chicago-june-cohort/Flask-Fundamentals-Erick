@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    font-size: 30px;
+    color:red;
+}
+h3{
+    text-align: center;
+}
+#text{
+    margin-left: 640px;
+}
+#submit{
+    margin-left: 685px;
+}
+#guess{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    margin-left: 600px;
+}
