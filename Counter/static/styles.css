@@ -1,0 +1,24 @@
+h1{
+    color: red;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+#wrapper{
+    height: 300px;
+    width: 500px;
+    vertical-align: top;
+    padding-top: 100px;
+    background-color: gainsboro;
+}
+#button{
+    width: 70px;
+    margin-left: 180px;
+}
+#reset{
+    width: 70px;
+}
+#num{
+    color: blue;
+}
