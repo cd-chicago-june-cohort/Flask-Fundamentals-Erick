@@ -21,3 +21,12 @@ h3{
     text-align: center;
     margin-left: 600px;
 }
+#winner{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    margin-left: 600px;
+}
