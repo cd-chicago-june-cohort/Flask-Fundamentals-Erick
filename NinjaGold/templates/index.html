@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+    <title>TITLE</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="yourGold">
+                <p class="gold">Your Gold: </p>
+                <div id="displayGold">{{currentGold}}</div>
+            </div>
+            <div class="places">
+                <form action="/process_money" method="post">
+                    <h2>Farm</h2>
+                    <h4>(earns 10-20 golds)</h4>
+                    <input type="hidden" name="building" value="farm"/>
+                    <input type="submit" value="Find Gold!">
+                </form>
+            </div>
+            <div class="places">
+                <form action="/process_money" method="post">
+                    <h2>Cave</h2>
+                    <h4>(earns 5-10 golds)</h4>
+                    <input type="hidden" name="building" value="cave"/>
+                    <input type="submit" value="Find Gold!">
+                </form>
+            </div>
+            <div class="places">
+                <form action="/process_money" method="post">
+                    <h2>House</h2>
+                    <h4>(earns 2-5 golds)</h4>
+                    <input type="hidden" name="building" value="house"/>
+                    <input type="submit" value="Find Gold!">
+                </form>
+            </div>
+            <div class="places">
+                <form action="/process_money" method="post">
+                    <h2>Casino</h2>
+                    <h4>(earns/takes 0-50 golds)</h4>
+                    <input type="hidden" name="building" value="casino"/>
+                    <input type="submit" value="Find Gold!">
+                </form>
+            </div>
+            <p id="act">Activities:</p>
+            <div id="activity">
+                <p class="outcome">{{outcome}}</p><br>
+            </div>
+        </div>
+    </body>
+</html>
