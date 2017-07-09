@@ -21,5 +21,12 @@
             <p>Comment: {{comment}}</p><br>
             <input id="button" type="submit" value="Go Back">
         </form>
+        {% with messages = get_flashed_messages()%}
+            {% if messages %}
+                {% for messages in messages %}
+                    {{messages}}
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
     </body>
 </html>
