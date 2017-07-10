@@ -1,0 +1,40 @@
+#wrapper{
+    height: 375px;
+    width: 400px;
+}
+#formBody{
+    height: 300px;
+    border: 2px solid black;
+    padding: 60px;
+}
+input{
+    margin-left: 10px;
+    display: inline-block;
+}
+p{
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-top: 0xp;
+
+}
+#email{
+    margin-left: 90px;
+}
+#firstname{
+    margin-left: 57px;
+}
+#lastname{
+    margin-left: 58px;
+}
+#password{
+    margin-left: 67px;
+}
+h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#submit{
+    margin-left: 77px;
+    margin-top: 10px;
+
+}
